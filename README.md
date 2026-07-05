@@ -2,6 +2,10 @@
 
 An MCP server that gives AI agents — Claude, Claude Code, Cursor, anything speaking the Model Context Protocol — tools to inspect a website's visibility to AI answer engines. Crawler permissions, llms.txt, structured data, on-page signals, and a full 29-check AI-readiness audit (powered by [answer-audit](https://github.com/arthurcarlsonn/answer-audit)), each one tool call away. Read-only, no API keys, no telemetry.
 
+![Claude Desktop using aeo-mcp to inspect The Verge's AI crawler policy](docs/claude-desktop.png)
+
+*Real session: Claude Desktop discovers The Verge allows GPTBot (OpenAI licensing deal) while blocking ClaudeBot, PerplexityBot, Google-Extended, and CCBot — one tool call.*
+
 ## Install
 
 **Claude Code**
