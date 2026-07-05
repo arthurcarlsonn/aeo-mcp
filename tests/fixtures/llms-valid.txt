@@ -1,0 +1,9 @@
+# GlowLab
+
+> GlowLab makes clinically tested vitamin C skincare, sold direct to consumers in the US and EU.
+
+## Key pages
+
+- [Vitamin C Serum](https://glowlab.example/serum): our flagship product
+- [Ingredient research](https://glowlab.example/research): clinical studies behind the formulas
+- [FAQ](https://glowlab.example/faq): shipping, returns, and usage questions

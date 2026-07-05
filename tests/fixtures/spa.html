@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<title>App</title>
+<script>
+// Simulated bundle stub: enough bytes of script to make visible text negligible.
+window.__APP_STATE__={routes:["/","/products","/cart","/checkout","/account","/orders","/settings","/support"],flags:{newNav:true,expressCheckout:false,reviewsV2:true,searchSuggest:true},locale:"en-US",currency:"USD",experiments:{heroVariant:"b",pdpLayout:"stacked",bannerCopy:"summer"},bootstrap:{cdn:"https://cdn.example.com",api:"https://api.example.com/v3",ws:"wss://rt.example.com"},telemetry:{sample:0.1,endpoint:"/t"},cache:{ttl:300,keys:["catalog","nav","footer"]},theme:{primary:"#0055ff",radius:8,font:"Inter"}};
+function bootstrapApplication(config){var registry={};function register(name,factory){registry[name]=factory;}function resolve(name){if(!registry[name]){throw new Error("Unknown module "+name);}return registry[name]();}register("router",function(){return{navigate:function(path){history.pushState({},"",path);render(path);}};});register("store",function(){var state={};return{get:function(k){return state[k];},set:function(k,v){state[k]=v;notify(k);}};});function notify(key){document.dispatchEvent(new CustomEvent("state:"+key));}function render(path){var root=document.getElementById("root");root.innerHTML="";var el=document.createElement("div");el.className="route-"+path.replace(/\//g,"-");root.appendChild(el);}return{resolve:resolve,render:render};}
+var app=bootstrapApplication(window.__APP_STATE__);document.addEventListener("DOMContentLoaded",function(){app.render(location.pathname);fetch("/api/session").then(function(r){return r.json();}).then(function(session){window.__SESSION__=session;});});
+</script>
+</head>
+<body>
+<div id="root"></div>
+<noscript>Enable JavaScript.</noscript>
+</body>
+</html>
