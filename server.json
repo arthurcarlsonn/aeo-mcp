@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.arthurcarlsonn/aeo-mcp",
+  "description": "MCP server that gives AI agents tools to inspect a website's visibility to AI answer engines: crawler permissions, llms.txt, structured data, and a full AI-readiness audit.",
+  "repository": {
+    "url": "https://github.com/arthurcarlsonn/aeo-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "aeo-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

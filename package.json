@@ -1,6 +1,6 @@
 {
   "name": "aeo-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server that gives AI agents tools to inspect a website's visibility to AI answer engines: crawler permissions, llms.txt, structured data, and a full AI-readiness audit.",
   "type": "module",
   "license": "MIT",
@@ -48,5 +48,6 @@
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
-  }
+  },
+  "mcpName": "io.github.arthurcarlsonn/aeo-mcp"
 }
