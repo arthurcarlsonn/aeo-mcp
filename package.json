@@ -1,0 +1,52 @@
+{
+  "name": "aeo-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that gives AI agents tools to inspect a website's visibility to AI answer engines: crawler permissions, llms.txt, structured data, and a full AI-readiness audit.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "aeo-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model context protocol",
+    "mcp-server",
+    "aeo",
+    "geo",
+    "llms.txt",
+    "ai visibility",
+    "seo",
+    "answer-engine",
+    "claude",
+    "cursor"
+  ],
+  "author": "Arthur Carlson (https://linkedin.com/in/arthurcarlsonn)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurcarlsonn/aeo-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "answer-audit": "^1.0.0",
+    "cheerio": "^1.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
